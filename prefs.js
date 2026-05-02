@@ -114,7 +114,7 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
             });
 
             const toggle = new Gtk.Switch({
-                active: monitoredInterfaces.length === 0 || monitoredInterfaces.includes(ifname),
+                active: monitoredInterfaces.includes(ifname),
                 valign: Gtk.Align.CENTER,
             });
 
