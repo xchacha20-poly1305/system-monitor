@@ -5,8 +5,8 @@ SPDX-License-Identifier: GPL-2.0-or-later
 -->
 
 <schemalist gettext-domain="gnome-shell-extensions">
-  <schema id="org.gnome.shell.extensions.system-monitor"
-          path="/org/gnome/shell/extensions/system-monitor/">
+  <schema id="org.codeberg.anrong.gnome.system-monitor"
+          path="/org/codeberg/anrong/gnome/system-monitor/">
     <key name="show-cpu" type="b">
       <default>true</default>
       <summary>Show CPU usage</summary>
@@ -26,6 +26,14 @@ SPDX-License-Identifier: GPL-2.0-or-later
     <key name="show-download" type="b">
       <default>true</default>
       <summary>Show download</summary>
+    </key>
+    <key name="monitored-interfaces" type="as">
+      <default>[]</default>
+      <summary>Network interfaces to monitor</summary>
+      <description>
+        List of network interface names to monitor (e.g., ['wlan0', 'eth0']).
+        If empty, all non-loopback interfaces will be monitored.
+      </description>
     </key>
   </schema>
 </schemalist>

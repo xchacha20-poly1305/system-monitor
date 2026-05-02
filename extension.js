@@ -189,6 +189,11 @@ class NetStatSection extends StatSection {
         GObject.registerClass(this);
     }
 
+    constructor(iconDir, iconName, accessibleName, settings) {
+        super(iconDir, iconName, accessibleName);
+        this._settings = settings;
+    }
+
     #formats = [{
         factor: 1000,
         unitFactor: 1000,
@@ -289,6 +294,9 @@ class NetStatSection extends StatSection {
         const netlist = new GTop.glibtop_netlist();
         const ifnames = GTop.glibtop_get_netlist(netlist);
 
+        const monitoredInterfaces = this._settings.get_strv('monitored-interfaces');
+        const shouldMonitorAll = monitoredInterfaces.length === 0;
+
         let bytes = 0;
         let hash = 1n;
 
@@ -297,6 +305,9 @@ class NetStatSection extends StatSection {
             GTop.glibtop_get_netload(netload, ifname);
 
             if (netload.if_flags & FLAG_LOOPBACK)
+                continue;
+
+            if (!shouldMonitorAll && !monitoredInterfaces.includes(ifname))
                 continue;
 
             bytes += this._getBytes(netload);
@@ -330,8 +341,8 @@ class UploadSection extends NetStatSection {
         GObject.registerClass(this);
     }
 
-    constructor(iconDir) {
-        super(iconDir, 'upload-symbolic', _('Upload stats'));
+    constructor(iconDir, settings) {
+        super(iconDir, 'upload-symbolic', _('Upload stats'), settings);
     }
 
     _getBytes(netload) {
@@ -344,8 +355,8 @@ class DownloadSection extends NetStatSection {
         GObject.registerClass(this);
     }
 
-    constructor(iconDir) {
-        super(iconDir, 'download-symbolic', _('Download stats'));
+    constructor(iconDir, settings) {
+        super(iconDir, 'download-symbolic', _('Download stats'), settings);
     }
 
     _getBytes(netload) {
@@ -397,13 +408,13 @@ class Indicator extends PanelMenu.Button {
             Gio.SettingsBindFlags.GET);
         box.add_child(this._swapSection);
 
-        this._ulSection = new UploadSection(iconDir);
+        this._ulSection = new UploadSection(iconDir, this._settings);
         this._settings.bind('show-upload',
             this._ulSection, 'visible',
             Gio.SettingsBindFlags.GET);
         box.add_child(this._ulSection);
 
-        this._dlSection = new DownloadSection(iconDir);
+        this._dlSection = new DownloadSection(iconDir, this._settings);
         this._settings.bind('show-download',
             this._dlSection, 'visible',
             Gio.SettingsBindFlags.GET);

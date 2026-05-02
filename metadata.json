@@ -1,0 +1,16 @@
+{
+  "name": "System Monitor (AnRong)",
+  "description": "Monitor system from the top bar with network interface filtering",
+  "uuid": "system-monitor@org.codeberg.anrong",
+  "settings-schema": "org.codeberg.anrong.gnome.system-monitor",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "version": 1,
+  "url": "https://gitlab.gnome.org/GNOME/gnome-shell-extensions"
+}
