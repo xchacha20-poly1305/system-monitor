@@ -1,0 +1,197 @@
+# Galician translation for gnome-shell-extensions.
+# Copyright (C) 2011 gnome-shell-extensions's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell-extensions package.
+#
+# Fran Diéguez <frandieguez@gnome.org>, 2011.
+# Fran Dieguez <fran.dieguez@gnome.org>, 2011-2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions master\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2025-04-15 21:11+0200\n"
+"Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-Module: gnome-shell-extensions\n"
+"X-DL-State: Translating\n"
+"X-DL-Team: gl\n"
+"X-Generator: Poedit 3.5\n"
+"X-Project-Style: gnome\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "Estatísticas de CPU"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "Estatísticas de memoria"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "Estatísticas da área de intercambio"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "Estatísticas de subida"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "Estatísticas de descarga"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "Estatísticas do sistema"
+
+#: extension.js:424
+msgid "Show"
+msgstr "Mostrar"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "CPU"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "Memoria"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "Área de intercambio"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "Subida"
+
+#: extension.js:434
+msgid "Download"
+msgstr "Descarga"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "Abrir Monitor do sistema"
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+msgid "Display Options"
+msgstr ""
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "Mostrar o uso de CPU"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "Mostrar o uso de memoria"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "Mostrar o uso da área de intercambio"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "Mostrar a subida"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "Mostrar a descarga"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "Mostrar o uso de CPU"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "Mostrar o uso de memoria"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "Mostrar o uso da área de intercambio"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "Mostrar a subida"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "Mostrar a descarga"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "Abrir Monitor do sistema"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

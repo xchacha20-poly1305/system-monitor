@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: system-monitor\n"
+"PO-Revision-Date: 2026-05-02 10:05+0800\n"
+"Last-Translator: AnRong\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "System Monitor (AnRong)"
+msgstr "系统监视器（AnRong）"
+
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr "从顶栏监控系统，并支持网络接口过滤"
+
+msgid "General"
+msgstr "常规"
+
+msgid "Display Options"
+msgstr "显示选项"
+
+msgid "Choose which system stats to show"
+msgstr "选择要显示的系统统计信息"
+
+msgid "Show CPU Usage"
+msgstr "显示 CPU 使用率"
+
+msgid "Show Memory Usage"
+msgstr "显示内存使用率"
+
+msgid "Show Swap Usage"
+msgstr "显示交换空间使用率"
+
+msgid "Show Upload Speed"
+msgstr "显示上传速度"
+
+msgid "Show Download Speed"
+msgstr "显示下载速度"
+
+msgid "Network Interface Monitoring"
+msgstr "网络接口监控"
+
+msgid "Select which network interfaces to monitor (leave all unchecked to monitor all)"
+msgstr "选择要监控的网络接口（全部不选则监控全部）"
+
+msgid "Network Interface"
+msgstr "网络接口"
+
+msgid "Wireless Interface"
+msgstr "无线接口"
+
+msgid "Ethernet Interface"
+msgstr "以太网接口"
+
+msgid "WireGuard VPN"
+msgstr "WireGuard VPN"
+
+msgid "VPN Interface"
+msgstr "VPN 接口"
+
+msgid "Virtual Bridge"
+msgstr "虚拟网桥"
+
+msgid "Network interfaces to monitor"
+msgstr "要监控的网络接口"
+
+msgid "List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If empty, all non-loopback interfaces will be monitored."
+msgstr "要监控的网络接口名称列表（例如 ['wlan0', 'eth0']）。如果为空，将监控所有非回环接口。"

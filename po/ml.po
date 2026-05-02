@@ -1,0 +1,199 @@
+# Malayalam translation for gnome-shell-extensions.
+# Copyright (C) 2013 gnome-shell-extensions's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Joshina Ramakrishnan <joshinaa@gmail.com>, 2013.
+# joshina Ramakrishnan <joshinaa@gmail.com>, 2013.
+# Mathews M <matthew17773@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions master\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2025-02-11 23:05+0530\n"
+"Last-Translator: Mathews M <matthew17773@gmail.com>\n"
+"Language-Team: Malayalam <l10n@lists.smc.org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 47.1\n"
+"X-Project-Style: gnome\n"
+"X-DL-Lang: ml\n"
+"X-DL-Module: gnome-shell-extensions\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "സി.പി.യു സ്ഥിതിവിവരണക്കണക്ക്"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "മെമ്മറി സ്ഥിതിവിവരണക്കണക്ക്"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "സ്വാപ്പ് സ്ഥിതിവിവരണക്കണക്ക്"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "അപ്‌ലോഡ് സ്ഥിതിവിവരണക്കണക്ക്"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "ഡൗൺലോഡ് സ്ഥിതിവിവരണക്കണക്ക്"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "സിസ്റ്റം സ്ഥിതിവിവരക്കണക്കുകൾ"
+
+#: extension.js:424
+msgid "Show"
+msgstr "കാണിക്കുക"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "സി.പി.യു"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "മെമ്മറി"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "സ്വാപ്പ്"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "അപ്‌ലോഡ്"
+
+#: extension.js:434
+msgid "Download"
+msgstr "ഡൗൺലോഡ്"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "സിസ്റ്റം മോണിറ്റർ തുറക്കുക"
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+#, fuzzy
+#| msgid "Display Settings"
+msgid "Display Options"
+msgstr "പ്രദര്‍ശന ക്രമീകരണങ്ങള്‍"
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "സി.പി.യു ഉപയോഗം കാണിക്കുക"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "മെമ്മറി ഉപയോഗം കാണിക്കുക"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "സ്വാപ്പ് ഉപയോഗം കാണിക്കുക"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "അപ്‌ലോഡ് കാണിക്കുക"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "ഡൗൺലോഡ് കാണിക്കുക"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "സി.പി.യു ഉപയോഗം കാണിക്കുക"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "മെമ്മറി ഉപയോഗം കാണിക്കുക"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "സ്വാപ്പ് ഉപയോഗം കാണിക്കുക"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "അപ്‌ലോഡ് കാണിക്കുക"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "ഡൗൺലോഡ് കാണിക്കുക"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "സിസ്റ്റം മോണിറ്റർ തുറക്കുക"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

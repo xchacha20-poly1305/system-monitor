@@ -1,0 +1,199 @@
+# Slovak translation for gnome-maps.
+# Copyright (C) 2013 gnome-maps's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-maps package.
+# Dušan Kazik <prescott66@gmail.com>, 2013-2021.
+# Jose Riha <jose1711@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-maps master\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2025-08-14 12:24+0200\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "Štatistiky procesora"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "Štatistiky pamäte"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "Štatistiky odkladacieho priestoru"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "Štatistiky odosielania"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "Štatistiky preberania"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "Štatistiky systému"
+
+#: extension.js:424
+msgid "Show"
+msgstr "Zobraziť"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "Procesor"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "Pamäť"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "Odkladací priestor"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "Odosielanie"
+
+#: extension.js:434
+msgid "Download"
+msgstr "Preberanie"
+
+# menuitem
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "Otvoriť Monitor systému"
+
+#: prefs.js:14
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "General"
+msgid "General"
+msgstr "Všeobecné"
+
+#: prefs.js:20
+msgid "Display Options"
+msgstr ""
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "Zobraziť využitie procesora"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "Zobraziť využitie pamäte"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "Zobraziť využitie odkladacieho priestoru"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "Zobraziť odosielanie"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "Zobraziť preberanie"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+#, fuzzy
+#| msgid "Wired internet access"
+msgid "Wireless Interface"
+msgstr "Drôtový prístup na internet"
+
+#: prefs.js:103
+#, fuzzy
+#| msgid "Internet access"
+msgid "Ethernet Interface"
+msgstr "Prístup na internet"
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "Zobraziť využitie procesora"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "Zobraziť využitie pamäte"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "Zobraziť využitie odkladacieho priestoru"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "Zobraziť odosielanie"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "Zobraziť preberanie"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+# menuitem
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "Otvoriť Monitor systému"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

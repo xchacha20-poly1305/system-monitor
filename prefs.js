@@ -4,26 +4,26 @@
 import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import GTop from 'gi://GTop';
-import {ExtensionPreferences} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 export default class SystemMonitorPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         const settings = this.getSettings();
 
         const page = new Adw.PreferencesPage({
-            title: 'General',
+            title: _('General'),
             icon_name: 'dialog-information-symbolic',
         });
         window.add(page);
 
         const displayGroup = new Adw.PreferencesGroup({
-            title: 'Display Options',
-            description: 'Choose which system stats to show',
+            title: _('Display Options'),
+            description: _('Choose which system stats to show'),
         });
         page.add(displayGroup);
 
         const cpuRow = new Adw.ActionRow({
-            title: 'Show CPU Usage',
+            title: _('Show CPU Usage'),
         });
         const cpuSwitch = new Gtk.Switch({
             active: settings.get_boolean('show-cpu'),
@@ -34,7 +34,7 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
         displayGroup.add(cpuRow);
 
         const memRow = new Adw.ActionRow({
-            title: 'Show Memory Usage',
+            title: _('Show Memory Usage'),
         });
         const memSwitch = new Gtk.Switch({
             active: settings.get_boolean('show-memory'),
@@ -45,7 +45,7 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
         displayGroup.add(memRow);
 
         const swapRow = new Adw.ActionRow({
-            title: 'Show Swap Usage',
+            title: _('Show Swap Usage'),
         });
         const swapSwitch = new Gtk.Switch({
             active: settings.get_boolean('show-swap'),
@@ -56,7 +56,7 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
         displayGroup.add(swapRow);
 
         const uploadRow = new Adw.ActionRow({
-            title: 'Show Upload Speed',
+            title: _('Show Upload Speed'),
         });
         const uploadSwitch = new Gtk.Switch({
             active: settings.get_boolean('show-upload'),
@@ -67,7 +67,7 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
         displayGroup.add(uploadRow);
 
         const downloadRow = new Adw.ActionRow({
-            title: 'Show Download Speed',
+            title: _('Show Download Speed'),
         });
         const downloadSwitch = new Gtk.Switch({
             active: settings.get_boolean('show-download'),
@@ -78,8 +78,8 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
         displayGroup.add(downloadRow);
 
         const networkGroup = new Adw.PreferencesGroup({
-            title: 'Network Interface Monitoring',
-            description: 'Select which network interfaces to monitor (leave all unchecked to monitor all)',
+            title: _('Network Interface Monitoring'),
+            description: _('Select which network interfaces to monitor (leave all unchecked to monitor all)'),
         });
         page.add(networkGroup);
 
@@ -96,17 +96,17 @@ export default class SystemMonitorPreferences extends ExtensionPreferences {
             if (netload.if_flags & FLAG_LOOPBACK)
                 continue;
 
-            let subtitle = 'Network Interface';
+            let subtitle = _('Network Interface');
             if (ifname.startsWith('wl'))
-                subtitle = 'Wireless Interface';
+                subtitle = _('Wireless Interface');
             else if (ifname.startsWith('eth') || ifname.startsWith('en'))
-                subtitle = 'Ethernet Interface';
+                subtitle = _('Ethernet Interface');
             else if (ifname.startsWith('wg'))
-                subtitle = 'WireGuard VPN';
+                subtitle = _('WireGuard VPN');
             else if (ifname.startsWith('tun') || ifname.startsWith('tap'))
-                subtitle = 'VPN Interface';
+                subtitle = _('VPN Interface');
             else if (ifname.startsWith('docker') || ifname.startsWith('br'))
-                subtitle = 'Virtual Bridge';
+                subtitle = _('Virtual Bridge');
 
             const row = new Adw.ActionRow({
                 title: ifname,

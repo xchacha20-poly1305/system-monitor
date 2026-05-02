@@ -1,0 +1,201 @@
+# Basque translation for gnome-shell-extensions.
+# Copyright (C) 2011 gnome-shell-extensions's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell-extensions package.
+#
+# assar <asiersar@yahoo.com>, 2011.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2011, 2013, 2015, 2017.
+# Edurne Labaka <elabaka@uzei.com>, 2015.
+# Asier Sarasua Garmendia  <asiersarasua@ni.eus>, 2019, 2020, 2021, 2024.
+# Ibai Oihanguren Sala <ibaios@disroot.org>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions master\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2026-01-11 20:54+0100\n"
+"Last-Translator: Ibai Oihanguren Sala <ibaios@disroot.org>\n"
+"Language-Team: Basque\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Project-Style: gnome\n"
+"X-DL-VCS-Web: https://gitlab.gnome.org/GNOME/gnome-shell-extensions/\n"
+"X-DL-Lang: eu\n"
+"X-DL-Module: gnome-shell-extensions\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: None\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "PUZ estatistikak"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "Memoriaren estatistikak"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "Trukatze-espazioaren estatistikak"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "Kargaren estatistikak"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "Deskargaren estatistikak"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "Sistemaren estatistikak"
+
+#: extension.js:424
+msgid "Show"
+msgstr "Erakutsi"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "PUZa"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "Memoria"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "Trukatze-espazioa"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "Kargatu"
+
+#: extension.js:434
+msgid "Download"
+msgstr "Deskargatu"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "Ireki sistema-monitorea"
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+msgid "Display Options"
+msgstr ""
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "Erakutsi PUZ erabilera"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "Erakutsi memoriaren erabilera"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "Erakutsi trukatze-espazioaren erabilera"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "Erakutsi karga"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "Erakutsi deskarga"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "Erakutsi PUZ erabilera"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "Erakutsi memoriaren erabilera"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "Erakutsi trukatze-espazioaren erabilera"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "Erakutsi karga"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "Erakutsi deskarga"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "Ireki sistema-monitorea"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

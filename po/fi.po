@@ -1,0 +1,197 @@
+# Finnish translation of gnome-shell-extensions.
+# Copyright (C) 2011 Ville-Pekka Vainio
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Gnome 2012-03 Finnish translation sprint participants:
+# Niklas Laxström
+# Ville-Pekka Vainio
+# Ville-Pekka Vainio <vpvainio@iki.fi>, 2011.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014, 2015, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2025-09-11 19:54+0300\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
+"Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.7\n"
+"X-Project-Style: gnome\n"
+"X-POT-Import-Date: 2012-03-05 15:06:12+0000\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "Suorittimen tilastot"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "Muistin tilastot"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "Swap-tilastot"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "Lähetystilastot"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "Lataustilastot"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "Järjestelmän tilastot"
+
+#: extension.js:424
+msgid "Show"
+msgstr "Näytä"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "Suoritin"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "Muisti"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "Swap"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "Lähetys"
+
+#: extension.js:434
+msgid "Download"
+msgstr "Lataus"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "Avaa järjestelmän valvonta"
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+#, fuzzy
+#| msgid "Display"
+msgid "Display Options"
+msgstr "Näyttö"
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "Näytä suorittimen käyttö"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "Näytä muistin käyttö"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "Näytä swap-käyttö"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "Näytä lähetys"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "Näytä lataus"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "Näytä suorittimen käyttö"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "Näytä muistin käyttö"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "Näytä swap-käyttö"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "Näytä lähetys"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "Näytä lataus"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "Avaa järjestelmän valvonta"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

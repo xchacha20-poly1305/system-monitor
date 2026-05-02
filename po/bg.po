@@ -1,0 +1,195 @@
+# Bulgarian translation for gnome-shell-extensions po-file.
+# Copyright (C) 2014, 2015, 2017 Free Software Foundation, Inc.
+# Copyright (C) 2021, 2022 Alexander Shopov <ash@kambanaria.org>.
+# Copyright (C) 2024 twlvnn kraftwerk <kraft_werk@tutanota.com>.
+# This file is distributed under the same license as the gnome-shell-extensions package.
+# Ivaylo Valkov <ivaylo@e-valkov.org>, 2014.
+# Alexander Shopov <ash@kambanaria.org>, 2014, 2015, 2021, 2022.
+# Lyubomir Vasilev <lyubomirv@abv.bg>, 2017.
+# twlvnn kraftwerk <kraft_werk@tutanota.com>, 2024.
+# @pacu23, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell-extensions main\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2026-01-01 18:41+0200\n"
+"Last-Translator: @pacu23\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "Статистика на процесора"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "Статистика на паметта"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "Статистика на виртуалната памет"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "Статистика за качването"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "Статистика за изтеглянето"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "Системна статистика"
+
+#: extension.js:424
+msgid "Show"
+msgstr "Показване"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "Процесор"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "Памет"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "Виртуалната памет"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "Качване"
+
+#: extension.js:434
+msgid "Download"
+msgstr "Изтегляне"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "Отваряне на „Наблюдение на системата“"
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+msgid "Display Options"
+msgstr ""
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+#, fuzzy
+#| msgid "Show CPU usage"
+msgid "Show CPU Usage"
+msgstr "Показване на използването на процесора"
+
+#: prefs.js:37
+#, fuzzy
+#| msgid "Show memory usage"
+msgid "Show Memory Usage"
+msgstr "Показване на използването на паметта"
+
+#: prefs.js:48
+#, fuzzy
+#| msgid "Show swap usage"
+msgid "Show Swap Usage"
+msgstr "Показване на използването на виртуалната памет"
+
+#: prefs.js:59
+#, fuzzy
+#| msgid "Show upload"
+msgid "Show Upload Speed"
+msgstr "Показване на качването"
+
+#: prefs.js:70
+#, fuzzy
+#| msgid "Show download"
+msgid "Show Download Speed"
+msgstr "Показване на изтеглянето"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "Показване на използването на процесора"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "Показване на използването на паметта"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "Показване на използването на виртуалната памет"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "Показване на качването"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "Показване на изтеглянето"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+#, fuzzy
+#| msgid "Open System Monitor"
+msgid "System Monitor (AnRong)"
+msgstr "Отваряне на „Наблюдение на системата“"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

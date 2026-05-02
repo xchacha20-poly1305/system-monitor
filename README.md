@@ -16,11 +16,18 @@ A customizable system monitoring extension for GNOME Shell with network interfac
 
 ### Build and Install
 
+For a per-user local install:
+
+```bash
+cd /path/to/system-monitor
+scripts/install-local.sh
+```
+
 Using Meson:
 
 ```bash
 cd /path/to/system-monitor
-meson setup build
+meson setup --prefix="$HOME/.local" build
 meson compile -C build
 meson install -C build
 ```
@@ -40,6 +47,16 @@ cp -r icons schemas \
 # Compile GSettings schema
 glib-compile-schemas \
   ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/schemas/
+
+# Compile and install translations
+while read -r lang; do
+  [ -z "$lang" ] || [ "${lang#\#}" != "$lang" ] && continue
+  install -d \
+    "$HOME/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/locale/$lang/LC_MESSAGES"
+  msgfmt --check \
+    --output-file="$HOME/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/locale/$lang/LC_MESSAGES/org.codeberg.anrong.gnome.system-monitor.mo" \
+    po/$lang.po
+done < po/LINGUAS
 ```
 
 ### Enable the Extension
@@ -170,6 +187,92 @@ rm -rf ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong
 ```
 
 Then restart GNOME Shell.
+
+## Translation Guide
+
+Translations are maintained under `po/`. Most strings are copied from the
+upstream GNOME Shell Extensions translation catalog, then merged with strings
+added by this fork.
+
+### Sync From Upstream
+
+The sync script expects the upstream repository at `../gnome-shell-extensions`
+by default:
+
+```bash
+scripts/sync-translations.sh
+```
+
+If the upstream checkout is somewhere else, pass its path:
+
+```bash
+scripts/sync-translations.sh /path/to/gnome-shell-extensions
+```
+
+The script will:
+
+- extract translatable strings from `extension.js`, `prefs.js`, `metadata.json`,
+  and the GSettings schema
+- copy all languages listed in the upstream `po/` directory
+- merge upstream translations into this extension's template
+- apply local translation overrides from `po/overrides/`
+- regenerate `po/LINGUAS` and `po/org.codeberg.anrong.gnome.system-monitor.pot`
+
+### Local Translation Overrides
+
+Fork-specific translations should be added to override files instead of editing
+generated language files directly. For Chinese translations, update:
+
+- `po/overrides/zh_CN.po`
+- `po/overrides/zh_TW.po`
+- `po/overrides/zh_HK.po`
+
+Then rerun:
+
+```bash
+scripts/sync-translations.sh
+```
+
+This keeps local strings such as the preferences UI and metadata translated
+while still allowing upstream translations to be refreshed.
+
+### Add New Translatable Strings
+
+For JavaScript strings, wrap user-visible text with `_()`:
+
+```js
+title: _('Display Options')
+```
+
+For preferences code, import gettext from the preferences extension API:
+
+```js
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+```
+
+After adding or changing strings, run the sync script and add Chinese
+translations to the override files when needed.
+
+### Verify Translations
+
+Check the script syntax:
+
+```bash
+bash -n scripts/sync-translations.sh
+```
+
+Check a PO file:
+
+```bash
+msgfmt --check --output-file=/tmp/zh_CN.mo po/zh_CN.po
+```
+
+Build all translations with Meson:
+
+```bash
+meson setup build
+meson compile -C build
+```
 
 ## Technical Details
 

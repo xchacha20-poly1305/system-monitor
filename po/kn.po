@@ -1,0 +1,180 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shankar Prasad <svenkate@redhat.com>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2014-09-17 16:33+0530\n"
+"Last-Translator: Shankar Prasad <svenkate AT redhat Dot com>\n"
+"Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr ""
+
+#: extension.js:157
+#, fuzzy
+#| msgid "Memory"
+msgid "Memory stats"
+msgstr "ಮೆಮೊರಿ"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr ""
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr ""
+
+#: extension.js:359
+msgid "Download stats"
+msgstr ""
+
+#: extension.js:374
+msgid "System stats"
+msgstr ""
+
+#: extension.js:424
+msgid "Show"
+msgstr ""
+
+#: extension.js:426
+msgid "CPU"
+msgstr "CPU"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "ಮೆಮೊರಿ"
+
+#: extension.js:430
+msgid "Swap"
+msgstr ""
+
+#: extension.js:432
+msgid "Upload"
+msgstr ""
+
+#: extension.js:434
+msgid "Download"
+msgstr ""
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr ""
+
+#: prefs.js:14
+msgid "General"
+msgstr ""
+
+#: prefs.js:20
+#, fuzzy
+#| msgid "Display Settings"
+msgid "Display Options"
+msgstr "ಪ್ರದರ್ಶಕದ ಸಿದ್ಧತೆಗಳು"
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr ""
+
+#: prefs.js:26
+msgid "Show CPU Usage"
+msgstr ""
+
+#: prefs.js:37
+msgid "Show Memory Usage"
+msgstr ""
+
+#: prefs.js:48
+msgid "Show Swap Usage"
+msgstr ""
+
+#: prefs.js:59
+msgid "Show Upload Speed"
+msgstr ""
+
+#: prefs.js:70
+msgid "Show Download Speed"
+msgstr ""
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr ""
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr ""
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr ""
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr ""
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr ""
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr ""
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr ""
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr ""
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+
+#. Extension metadata name
+#: metadata.json:2
+msgid "System Monitor (AnRong)"
+msgstr ""
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr ""

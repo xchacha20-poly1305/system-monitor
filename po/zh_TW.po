@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: system-monitor\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
+"POT-Creation-Date: 2026-05-02 10:05+0800\n"
+"PO-Revision-Date: 2026-05-02 10:05+0800\n"
+"Last-Translator: AnRong\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: extension.js:133
+msgid "CPU stats"
+msgstr "CPU 狀態"
+
+#: extension.js:157
+msgid "Memory stats"
+msgstr "記憶體狀態"
+
+#: extension.js:175
+msgid "Swap stats"
+msgstr "置換區狀態"
+
+#: extension.js:345
+msgid "Upload stats"
+msgstr "上傳狀態"
+
+#: extension.js:359
+msgid "Download stats"
+msgstr "下載狀態"
+
+#: extension.js:374
+msgid "System stats"
+msgstr "系統狀態"
+
+#: extension.js:424
+msgid "Show"
+msgstr "顯示"
+
+#: extension.js:426
+msgid "CPU"
+msgstr "CPU"
+
+#: extension.js:428
+msgid "Memory"
+msgstr "記憶體"
+
+#: extension.js:430
+msgid "Swap"
+msgstr "置換區"
+
+#: extension.js:432
+msgid "Upload"
+msgstr "上傳"
+
+#: extension.js:434
+msgid "Download"
+msgstr "下載"
+
+#: extension.js:439
+msgid "Open System Monitor"
+msgstr "開啟系統監視器"
+
+#: prefs.js:14
+msgid "General"
+msgstr "一般"
+
+#: prefs.js:20
+msgid "Display Options"
+msgstr "顯示選項"
+
+#: prefs.js:21
+msgid "Choose which system stats to show"
+msgstr "選擇要顯示的系統統計資料"
+
+#: prefs.js:26
+msgid "Show CPU Usage"
+msgstr "顯示 CPU 使用率"
+
+#: prefs.js:37
+msgid "Show Memory Usage"
+msgstr "顯示記憶體使用率"
+
+#: prefs.js:48
+msgid "Show Swap Usage"
+msgstr "顯示交換空間使用率"
+
+#: prefs.js:59
+msgid "Show Upload Speed"
+msgstr "顯示上傳速度"
+
+#: prefs.js:70
+msgid "Show Download Speed"
+msgstr "顯示下載速度"
+
+#: prefs.js:81
+msgid "Network Interface Monitoring"
+msgstr "網路介面監控"
+
+#: prefs.js:82
+msgid ""
+"Select which network interfaces to monitor (leave all unchecked to monitor "
+"all)"
+msgstr "選擇要監控的網路介面（全部不勾選則監控全部）"
+
+#: prefs.js:99
+msgid "Network Interface"
+msgstr "網路介面"
+
+#: prefs.js:101
+msgid "Wireless Interface"
+msgstr "無線介面"
+
+#: prefs.js:103
+msgid "Ethernet Interface"
+msgstr "乙太網路介面"
+
+#: prefs.js:105
+msgid "WireGuard VPN"
+msgstr "WireGuard VPN"
+
+#: prefs.js:107
+msgid "VPN Interface"
+msgstr "VPN 介面"
+
+#: prefs.js:109
+msgid "Virtual Bridge"
+msgstr "虛擬橋接"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+msgid "Show CPU usage"
+msgstr "顯示 CPU 使用率"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+msgid "Show memory usage"
+msgstr "顯示記憶體使用率"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+msgid "Show swap usage"
+msgstr "顯示置換區使用率"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+msgid "Show upload"
+msgstr "顯示上傳"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+msgid "Show download"
+msgstr "顯示下載"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+msgid "Network interfaces to monitor"
+msgstr "要監控的網路介面"
+
+#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+msgid ""
+"List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
+"empty, all non-loopback interfaces will be monitored."
+msgstr ""
+"要監控的網路介面名稱清單（例如 ['wlan0', 'eth0']）。若留空，將監控所有非迴路"
+"介面。"
+
+#. Extension metadata name
+#: metadata.json:2
+msgid "System Monitor (AnRong)"
+msgstr "系統監視器（AnRong）"
+
+#. Extension metadata description
+#: metadata.json:3
+msgid "Monitor system from the top bar with network interface filtering"
+msgstr "從頂端列監控系統，並支援網路介面篩選"

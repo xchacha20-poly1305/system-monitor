@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2023 Florian Müllner <fmuellner@gnome.org>
 SPDX-License-Identifier: GPL-2.0-or-later
 -->
 
-<schemalist gettext-domain="gnome-shell-extensions">
+<schemalist gettext-domain="org.codeberg.anrong.gnome.system-monitor">
   <schema id="org.codeberg.anrong.gnome.system-monitor"
           path="/org/codeberg/anrong/gnome/system-monitor/">
     <key name="show-cpu" type="b">
