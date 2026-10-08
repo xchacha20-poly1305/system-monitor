@@ -1,14 +1,15 @@
 # Norwegian bokmål translation of gnome-shell-extensions.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2011-2017.
+# Kjartan Maraas <kmaraas@gnome.org>, 2011-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell-extensions 3.26.x\n"
-"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
-"POT-Creation-Date: 2026-05-02 10:05+0800\n"
-"PO-Revision-Date: 2024-08-24 22:21+0200\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/xchacha20-poly1305/system-monitor/"
+"issues\n"
+"POT-Creation-Date: 2026-05-02 10:24+0800\n"
+"PO-Revision-Date: 2026-09-09 23:05+0200\n"
 "Last-Translator: Brage Fuglseth <bragefuglseth@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"

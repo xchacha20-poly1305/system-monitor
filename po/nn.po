@@ -1,74 +1,74 @@
-# Kazakh translation for gnome-shell-extensions.
-# Copyright (C) 2013 gnome-shell-extensions's COPYRIGHT HOLDER
+# Norwegian Nynorsk translation for gnome-shell-extensions.
+# Copyright (C) 2026 gnome-shell-extensions's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-shell-extensions package.
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2013-2020.
+# Roy-Magne Mo <rmo@sunnmore.net>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell-extensions master\n"
+"Project-Id-Version: gnome-shell-extensions main\n"
 "Report-Msgid-Bugs-To: https://codeberg.org/xchacha20-poly1305/system-monitor/"
 "issues\n"
 "POT-Creation-Date: 2026-05-02 10:24+0800\n"
-"PO-Revision-Date: 2026-01-11 23:01+0500\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"Language-Team: Kazakh <kk@li.org>\n"
-"Language: kk\n"
+"PO-Revision-Date: 2026-09-24 15:00+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: extension.js:133
 msgid "CPU stats"
-msgstr "Процессор статистикасы"
+msgstr "CPU-statistikk"
 
 #: extension.js:157
 msgid "Memory stats"
-msgstr "Жады статистикасы"
+msgstr "Minnestatistikk"
 
 #: extension.js:175
 msgid "Swap stats"
-msgstr "Своп статистикасы"
+msgstr "Swap-statistikk"
 
 #: extension.js:345
 msgid "Upload stats"
-msgstr "Жүктеп салу статистикасы"
+msgstr "Opplastingsstatistikk"
 
 #: extension.js:359
 msgid "Download stats"
-msgstr "Жүктеп алу статистикасы"
+msgstr "Nedlastingsstatistikk"
 
 #: extension.js:374
 msgid "System stats"
-msgstr "Жүйе статистикасы"
+msgstr "Systemstatistikk"
 
 #: extension.js:424
 msgid "Show"
-msgstr "Көрсету"
+msgstr "Vis"
 
 #: extension.js:426
 msgid "CPU"
-msgstr "Процессор"
+msgstr "CPU"
 
 #: extension.js:428
 msgid "Memory"
-msgstr "Жады"
+msgstr "Minne"
 
 #: extension.js:430
 msgid "Swap"
-msgstr "Своп"
+msgstr "Swap"
 
 #: extension.js:432
 msgid "Upload"
-msgstr "Жүктеп салу"
+msgstr "Last opp"
 
 #: extension.js:434
 msgid "Download"
-msgstr "Жүктеп алу"
+msgstr "Last ned"
 
 #: extension.js:439
 msgid "Open System Monitor"
-msgstr "Жүйелік бақылаушысын ашу"
+msgstr "Opne Systemovervakar"
 
 #: prefs.js:14
 msgid "General"
@@ -86,31 +86,31 @@ msgstr ""
 #, fuzzy
 #| msgid "Show CPU usage"
 msgid "Show CPU Usage"
-msgstr "Процессор қолданылуын көрсету"
+msgstr "Vis CPU-bruk"
 
 #: prefs.js:37
 #, fuzzy
 #| msgid "Show memory usage"
 msgid "Show Memory Usage"
-msgstr "Жады пайдалануын көрсету"
+msgstr "Vis minnebruk"
 
 #: prefs.js:48
 #, fuzzy
 #| msgid "Show swap usage"
 msgid "Show Swap Usage"
-msgstr "Своп пайдалануын көрсету"
+msgstr "Vis swap-bruk"
 
 #: prefs.js:59
 #, fuzzy
 #| msgid "Show upload"
 msgid "Show Upload Speed"
-msgstr "Жүктеп салуды көрсету"
+msgstr "Vis opplasting"
 
 #: prefs.js:70
 #, fuzzy
 #| msgid "Show download"
 msgid "Show Download Speed"
-msgstr "Жүктеп алуды көрсету"
+msgstr "Vis nedlasting"
 
 #: prefs.js:81
 msgid "Network Interface Monitoring"
@@ -148,23 +148,23 @@ msgstr ""
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
 msgid "Show CPU usage"
-msgstr "Процессор қолданылуын көрсету"
+msgstr "Vis CPU-bruk"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
 msgid "Show memory usage"
-msgstr "Жады пайдалануын көрсету"
+msgstr "Vis minnebruk"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
 msgid "Show swap usage"
-msgstr "Своп пайдалануын көрсету"
+msgstr "Vis swap-bruk"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
 msgid "Show upload"
-msgstr "Жүктеп салуды көрсету"
+msgstr "Vis opplasting"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
 msgid "Show download"
-msgstr "Жүктеп алуды көрсету"
+msgstr "Vis nedlasting"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
 msgid "Network interfaces to monitor"
@@ -181,7 +181,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Open System Monitor"
 msgid "System Monitor (AnRong)"
-msgstr "Жүйелік бақылаушысын ашу"
+msgstr "Opne Systemovervakar"
 
 #. Extension metadata description
 #: metadata.json:3

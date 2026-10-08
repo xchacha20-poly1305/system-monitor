@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell-extensions\n"
-"Report-Msgid-Bugs-To: https://codeberg.org/anrong/system-monitor/issues\n"
-"POT-Creation-Date: 2026-05-02 10:05+0800\n"
-"PO-Revision-Date: 2025-06-29 09:56+0200\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/xchacha20-poly1305/system-monitor/"
+"issues\n"
+"POT-Creation-Date: 2026-05-02 10:24+0800\n"
+"PO-Revision-Date: 2026-08-21 09:56+0200\n"
 "Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -34,11 +35,11 @@ msgstr "Estadístiques del «swap»"
 
 #: extension.js:345
 msgid "Upload stats"
-msgstr "Estadístiques de pujada"
+msgstr "Estadístiques d'enviament"
 
 #: extension.js:359
 msgid "Download stats"
-msgstr "Estadístiques de descàrrega"
+msgstr "Estadístiques de recepció"
 
 #: extension.js:374
 msgid "System stats"
@@ -62,11 +63,11 @@ msgstr "Espai d'intercanvi"
 
 #: extension.js:432
 msgid "Upload"
-msgstr "Pujades"
+msgstr "Enviament"
 
 #: extension.js:434
 msgid "Download"
-msgstr "Descàrregues"
+msgstr "Recepció"
 
 #: extension.js:439
 msgid "Open System Monitor"
@@ -106,13 +107,13 @@ msgstr "Mostra l'ús de l'espai d'intercanvi"
 #, fuzzy
 #| msgid "Show upload"
 msgid "Show Upload Speed"
-msgstr "Mostra les pujades"
+msgstr "Mostra l'enviament"
 
 #: prefs.js:70
 #, fuzzy
 #| msgid "Show download"
 msgid "Show Download Speed"
-msgstr "Mostra les descàrregues"
+msgstr "Mostra la recepció"
 
 #: prefs.js:81
 msgid "Network Interface Monitoring"
@@ -162,11 +163,11 @@ msgstr "Mostra l'ús de l'espai d'intercanvi"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
 msgid "Show upload"
-msgstr "Mostra les pujades"
+msgstr "Mostra l'enviament"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
 msgid "Show download"
-msgstr "Mostra les descàrregues"
+msgstr "Mostra la recepció"
 
 #: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
 msgid "Network interfaces to monitor"
