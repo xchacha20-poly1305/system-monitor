@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository contains a GNOME Shell extension for system monitoring. Core runtime code lives in `extension.js`; the preferences UI is in `prefs.js`; panel styling is in `stylesheet.css`. Extension metadata is split between `metadata.json` and `metadata.json.in`. GSettings schemas are under `schemas/`, symbolic icons are under `icons/`, and gettext translations are under `po/` with local overrides in `po/overrides/`. Helper scripts for local installation, schema compilation, and translation syncing live in `scripts/`.
+This repository contains a GNOME Shell extension for system monitoring. Core runtime code lives in `extension.js`; the preferences UI is in `prefs.js`; panel styling is in `stylesheet.css`. Extension metadata is split between `metadata.json` and `metadata.json.in`. `metadata.json` is the single source of the extension's identifiers (`uuid`, `gettext-domain`, `settings-schema`): `meson.build` and the scripts read them through `scripts/metadata-value.py`, and the schema file must be named `schemas/<settings-schema>.gschema.xml`. GSettings schemas are under `schemas/`, symbolic icons are under `icons/`, and gettext translations are under `po/` with local overrides in `po/overrides/`. Helper scripts for local installation, schema compilation, and translation syncing live in `scripts/`.
 
 ## Build, Test, and Development Commands
 
@@ -10,8 +10,8 @@ This repository contains a GNOME Shell extension for system monitoring. Core run
 - `meson setup --prefix="$HOME/.local" build`: configures a local Meson build directory.
 - `meson compile -C build`: runs the Meson build.
 - `meson install -C build`: installs files to the configured prefix.
-- `gnome-extensions enable system-monitor@org.codeberg.anrong`: enables the extension after GNOME Shell is restarted or the user logs back in.
-- `gnome-extensions prefs system-monitor@org.codeberg.anrong`: opens the preferences window for manual verification.
+- `gnome-extensions enable system-monitor@io.github.xchacha20-poly1305`: enables the extension after GNOME Shell is restarted or the user logs back in.
+- `gnome-extensions prefs system-monitor@io.github.xchacha20-poly1305`: opens the preferences window for manual verification.
 - `scripts/sync-translations.sh [UPSTREAM_PATH]`: refreshes `po/` from an upstream `gnome-shell-extensions` checkout.
 
 ## Coding Style & Naming Conventions

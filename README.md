@@ -36,25 +36,25 @@ Or manually:
 
 ```bash
 # Create extension directory
-mkdir -p ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong
+mkdir -p ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305
 
 # Copy files
 cp extension.js prefs.js stylesheet.css metadata.json \
-  ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/
+  ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/
 cp -r icons schemas \
-  ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/
+  ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/
 
 # Compile GSettings schema
 glib-compile-schemas \
-  ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/schemas/
+  ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/schemas/
 
 # Compile and install translations
 while read -r lang; do
   [ -z "$lang" ] || [ "${lang#\#}" != "$lang" ] && continue
   install -d \
-    "$HOME/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/locale/$lang/LC_MESSAGES"
+    "$HOME/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/locale/$lang/LC_MESSAGES"
   msgfmt --check \
-    --output-file="$HOME/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/locale/$lang/LC_MESSAGES/org.codeberg.anrong.gnome.system-monitor.mo" \
+    --output-file="$HOME/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/locale/$lang/LC_MESSAGES/io.github.xchacha20-poly1305.gnome.system-monitor.mo" \
     po/$lang.po
 done < po/LINGUAS
 ```
@@ -74,14 +74,14 @@ After installation, restart GNOME Shell:
 Then enable the extension:
 
 ```bash
-gnome-extensions enable system-monitor@org.codeberg.anrong
+gnome-extensions enable system-monitor@io.github.xchacha20-poly1305
 ```
 
 Verify installation:
 
 ```bash
 gnome-extensions list | grep system-monitor
-gnome-extensions info system-monitor@org.codeberg.anrong
+gnome-extensions info system-monitor@io.github.xchacha20-poly1305
 ```
 
 ## Configuration
@@ -91,7 +91,7 @@ gnome-extensions info system-monitor@org.codeberg.anrong
 Open the preferences dialog:
 
 ```bash
-gnome-extensions prefs system-monitor@org.codeberg.anrong
+gnome-extensions prefs system-monitor@io.github.xchacha20-poly1305
 ```
 
 In the settings window, you can:
@@ -103,29 +103,29 @@ In the settings window, you can:
 View current configuration:
 
 ```bash
-gsettings get org.codeberg.anrong.gnome.system-monitor monitored-interfaces
+gsettings get io.github.xchacha20-poly1305.gnome.system-monitor monitored-interfaces
 ```
 
 Monitor all interfaces (default):
 
 ```bash
-gsettings set org.codeberg.anrong.gnome.system-monitor monitored-interfaces "[]"
+gsettings set io.github.xchacha20-poly1305.gnome.system-monitor monitored-interfaces "[]"
 ```
 
 Monitor specific interfaces:
 
 ```bash
 # Monitor only wlan0
-gsettings set org.codeberg.anrong.gnome.system-monitor monitored-interfaces "['wlan0']"
+gsettings set io.github.xchacha20-poly1305.gnome.system-monitor monitored-interfaces "['wlan0']"
 
 # Monitor wlan0 and wg0
-gsettings set org.codeberg.anrong.gnome.system-monitor monitored-interfaces "['wlan0', 'wg0']"
+gsettings set io.github.xchacha20-poly1305.gnome.system-monitor monitored-interfaces "['wlan0', 'wg0']"
 ```
 
 Reset to default:
 
 ```bash
-gsettings reset org.codeberg.anrong.gnome.system-monitor monitored-interfaces
+gsettings reset io.github.xchacha20-poly1305.gnome.system-monitor monitored-interfaces
 ```
 
 ### View Available Network Interfaces
@@ -155,10 +155,10 @@ When `monitored-interfaces` is an empty array `[]`, the extension monitors all n
 
 ### Configuration Not Taking Effect
 
-- Verify the correct schema ID: `org.codeberg.anrong.gnome.system-monitor`
+- Verify the correct schema ID: `io.github.xchacha20-poly1305.gnome.system-monitor`
 - Recompile schema:
   ```bash
-  glib-compile-schemas ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/schemas/
+  glib-compile-schemas ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/schemas/
   ```
 
 ### Settings Window Won't Open
@@ -166,7 +166,7 @@ When `monitored-interfaces` is an empty array `[]`, the extension monitors all n
 Ensure `prefs.js` exists and has correct permissions:
 
 ```bash
-ls -l ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/prefs.js
+ls -l ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/prefs.js
 ```
 
 ### Extension Fails to Load
@@ -182,8 +182,8 @@ journalctl -f -o cat /usr/bin/gnome-shell
 To remove the extension:
 
 ```bash
-gnome-extensions disable system-monitor@org.codeberg.anrong
-rm -rf ~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong
+gnome-extensions disable system-monitor@io.github.xchacha20-poly1305
+rm -rf ~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305
 ```
 
 Then restart GNOME Shell.
@@ -216,7 +216,7 @@ The script will:
 - copy all languages listed in the upstream `po/` directory
 - merge upstream translations into this extension's template
 - apply local translation overrides from `po/overrides/`
-- regenerate `po/LINGUAS` and `po/org.codeberg.anrong.gnome.system-monitor.pot`
+- regenerate `po/LINGUAS` and `po/io.github.xchacha20-poly1305.gnome.system-monitor.pot`
 
 ### Local Translation Overrides
 
@@ -284,8 +284,8 @@ meson compile -C build
 
 ## File Locations
 
-- **Extension Directory**: `~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/`
-- **Schema Files**: `~/.local/share/gnome-shell/extensions/system-monitor@org.codeberg.anrong/schemas/`
+- **Extension Directory**: `~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/`
+- **Schema Files**: `~/.local/share/gnome-shell/extensions/system-monitor@io.github.xchacha20-poly1305/schemas/`
 - **Source Code**: Project repository
 
 ## License

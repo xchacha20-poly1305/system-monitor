@@ -1,4 +1,4 @@
 extension.js
 prefs.js
 metadata.json
-schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml
+schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml

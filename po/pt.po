@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.14\n"
-"Report-Msgid-Bugs-To: https://codeberg.org/xchacha20-poly1305/system-monitor/"
+"Report-Msgid-Bugs-To: https://github.com/xchacha20-poly1305/system-monitor/"
 "issues\n"
 "POT-Creation-Date: 2026-05-02 10:24+0800\n"
 "PO-Revision-Date: 2025-12-30 23:18+0000\n"
@@ -163,31 +163,31 @@ msgstr ""
 msgid "Virtual Bridge"
 msgstr ""
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:12
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:12
 msgid "Show CPU usage"
 msgstr "Mostrar utilização da CPU"
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:16
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:16
 msgid "Show memory usage"
 msgstr "Mostrar utilização da memória"
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:20
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:20
 msgid "Show swap usage"
 msgstr "Mostrar utilização da swap"
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:24
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:24
 msgid "Show upload"
 msgstr "Mostrar envio"
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:28
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:28
 msgid "Show download"
 msgstr "Mostrar transferência"
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:32
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:32
 msgid "Network interfaces to monitor"
 msgstr ""
 
-#: schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml:33
+#: schemas/io.github.xchacha20-poly1305.gnome.system-monitor.gschema.xml:33
 msgid ""
 "List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If "
 "empty, all non-loopback interfaces will be monitored."

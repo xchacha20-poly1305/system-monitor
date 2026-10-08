@@ -10,9 +10,6 @@ root_dir=$(cd -- "$script_dir/.." && pwd)
 upstream_dir=${1:-"$root_dir/../gnome-shell-extensions"}
 upstream_po_dir="$upstream_dir/po"
 po_dir="$root_dir/po"
-domain="org.codeberg.anrong.gnome.system-monitor"
-pot_file="$po_dir/$domain.pot"
-schema_file="schemas/org.codeberg.anrong.gnome.system-monitor.gschema.xml"
 schema_its="/usr/share/gettext/its/gschema.its"
 
 require_tool() {
@@ -22,6 +19,7 @@ require_tool() {
     fi
 }
 
+require_tool python3
 require_tool xgettext
 require_tool msgcat
 require_tool msgmerge
@@ -29,6 +27,11 @@ require_tool msgattrib
 require_tool find
 require_tool sed
 require_tool sort
+
+metadata_value="$script_dir/metadata-value.py"
+domain=$("$metadata_value" gettext-domain)
+pot_file="$po_dir/$domain.pot"
+schema_file="schemas/$("$metadata_value" settings-schema).gschema.xml"
 
 if [ ! -d "$upstream_po_dir" ]; then
     echo "Upstream po directory not found: $upstream_po_dir" >&2
@@ -55,7 +58,7 @@ xgettext \
     --language=JavaScript \
     --keyword=_ \
     --package-name=system-monitor \
-    --msgid-bugs-address=https://codeberg.org/xchacha20-poly1305/system-monitor/issues \
+    --msgid-bugs-address=https://github.com/xchacha20-poly1305/system-monitor/issues \
     --output="$tmpdir/js.pot" \
     extension.js prefs.js
 
@@ -63,12 +66,12 @@ xgettext \
     --from-code=UTF-8 \
     --its="$schema_its" \
     --package-name=system-monitor \
-    --msgid-bugs-address=https://codeberg.org/xchacha20-poly1305/system-monitor/issues \
+    --msgid-bugs-address=https://github.com/xchacha20-poly1305/system-monitor/issues \
     --output="$tmpdir/schema.pot" \
     "$schema_file"
 
-metadata_name=$(sed -n 's/^[[:space:]]*"name"[[:space:]]*:[[:space:]]*"\(.*\)",[[:space:]]*$/\1/p' metadata.json)
-metadata_description=$(sed -n 's/^[[:space:]]*"description"[[:space:]]*:[[:space:]]*"\(.*\)",[[:space:]]*$/\1/p' metadata.json)
+metadata_name=$("$metadata_value" name)
+metadata_description=$("$metadata_value" description)
 
 cat > "$tmpdir/metadata.pot" <<POT
 #. Extension metadata name

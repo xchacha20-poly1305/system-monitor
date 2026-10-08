@@ -1,9 +1,9 @@
 {
   "name": "System Monitor (AnRong)",
   "description": "Monitor system from the top bar with network interface filtering",
-  "uuid": "system-monitor@org.codeberg.anrong",
-  "gettext-domain": "org.codeberg.anrong.gnome.system-monitor",
-  "settings-schema": "org.codeberg.anrong.gnome.system-monitor",
+  "uuid": "system-monitor@io.github.xchacha20-poly1305",
+  "gettext-domain": "io.github.xchacha20-poly1305.gnome.system-monitor",
+  "settings-schema": "io.github.xchacha20-poly1305.gnome.system-monitor",
   "shell-version": [
     "45",
     "46",
