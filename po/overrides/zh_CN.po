@@ -69,3 +69,6 @@ msgstr "要监控的网络接口"
 
 msgid "List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If empty, all non-loopback interfaces will be monitored."
 msgstr "要监控的网络接口名称列表（例如 ['wlan0', 'eth0']）。如果为空，将监控所有非回环接口。"
+
+msgid "Open Resources"
+msgstr "打开资源"

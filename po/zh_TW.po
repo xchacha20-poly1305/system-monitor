@@ -65,6 +65,10 @@ msgstr "下載"
 msgid "Open System Monitor"
 msgstr "開啟系統監視器"
 
+#: extension.js:441
+msgid "Open Resources"
+msgstr "開啟資源"
+
 #: prefs.js:14
 msgid "General"
 msgstr "一般"

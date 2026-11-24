@@ -438,11 +438,17 @@ class Indicator extends PanelMenu.Button {
 
         this._appMenuItem = this.menu.addAction(_('Open System Monitor'),
             () => this._openSystemMonitor());
+        this._resourcesMenuItem = this.menu.addAction(_('Open Resources'),
+            () => this._openResources());
 
         const appSystem = Shell.AppSystem.get_default();
         appSystem.connectObject('installed-changed',
-            () => this._updateSystemMonitorApp(), this);
+            () => {
+                this._updateSystemMonitorApp();
+                this._updateResourcesApp();
+            }, this);
         this._updateSystemMonitorApp();
+        this._updateResourcesApp();
 
         this._settings.connectObject('changed',
             () => this._sync(), this);
@@ -460,6 +466,23 @@ class Indicator extends PanelMenu.Button {
     _openSystemMonitor() {
         this._systemMonitorApp.activate();
         Main.overview.hide();
+    }
+
+    _updateResourcesApp() {
+        this._resourcesCommand = GLib.find_program_in_path('resources');
+        this._resourcesMenuItem.visible = this._resourcesCommand != null;
+    }
+
+    _openResources() {
+        if (!this._resourcesCommand)
+            return;
+
+        try {
+            Gio.Subprocess.new([this._resourcesCommand], Gio.SubprocessFlags.NONE);
+            Main.overview.hide();
+        } catch (e) {
+            console.error(e);
+        }
     }
 
     _toggleSettings(key) {

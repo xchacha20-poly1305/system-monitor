@@ -69,3 +69,6 @@ msgstr "要監控的網路介面"
 
 msgid "List of network interface names to monitor (e.g., ['wlan0', 'eth0']). If empty, all non-loopback interfaces will be monitored."
 msgstr "要監控的網路介面名稱清單（例如 ['wlan0', 'eth0']）。若留空，將監控所有非迴路介面。"
+
+msgid "Open Resources"
+msgstr "開啟資源"
